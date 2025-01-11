@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-hover img{
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr 100fr;
+}
+.card{
+    margin: 10px;
+}
+
+.btn-primary{
+    background-color: coral !important;
+    border: 0px solid #000 !important;
+}
+
+h5{
+    font-size: 25px !important;
+    font-weight: bolder !important;
+}
+
+@media (max-width:1024px){
+
+    .container{
+        grid-template-columns: 100fr 100fr;
+        grid-template-rows: 100fr 100fr;
+    }
+}
+@media (max-width:600px){
+
+    .container{
+        grid-template-columns: 100fr ;
+        grid-template-rows: 100fr 100fr 100fr 100fr;
+    }
+}
